@@ -190,7 +190,7 @@ body {
     letter-spacing: -0.6vh;
     text-align: center;
     outline: 0px solid transparent;
-    background-color: rgb(255, 213, 3);
+    background-color: rgb(255, 3, 255);
   }
 
   #inpt2 {
@@ -222,7 +222,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #00ff73;
+    background-color: #ffdd00;
 
   }
   
