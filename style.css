@@ -5,39 +5,7 @@
 
 @font-face {
   font-family: "SHKT25-A";
-  font-family: "SHKT25-Bauklotz";
-  font-family: "SHKT25-Birne";
-  font-family: "SHKT25-Brick";
-  font-family: "SHKT25-Cloud";
-  font-family: "SHKT25-Circle";
-  font-family: "SHKT25-Diamant-Fläche";
-  font-family: "SHKT25-Diamant";
-  font-family: "SHKT25-Ente";
-  font-family: "SHKT25-Explosion";
-  font-family: "SHKT25-Flower";
-  font-family: "SHKT25-Feuerwerk";
-  font-family: "SHKT25-Frame";
-  font-family: "SHKT25-Hand";
-  font-family: "SHKT25-Ghost";
-  font-family: "SHKT25-Heart";
-  font-family: "SHKT25-Hand";
-  font-family: "SHKT25-Kontur-Einfach";
-  font-family: "SHKT25-Kontur-Doppelt";
-  font-family: "SHKT25-Kontur-Fett-Gedreht";
-  font-family: "SHKT25-Kontur-Fett";
-  font-family: "SHKT25-Ohr";
-  font-family: "SHKT25-Sound";
-  font-family: "SHKT25-Spiral";
-  font-family: "SHKT25-Splash";
-  font-family: "SHKT25-Spot";
-  font-family: "SHKT25-Square";
-  font-family: "SHKT25-Streifen";
-  font-family: "SHKT25-Sun";
-  font-family: "SHKT25-Uhr";
-  font-family: "SHKT25-Vinyl";
-  font-family: "SHKT25-Würfel";
-  font-family: "SHKT25-Zaun";
-  src: url('https://simonmeier4.github.io/SKT_woff') format('woff');
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
 
 }
 
@@ -63,7 +31,7 @@ body {
     letter-spacing: -0.6vh;
     text-align: center;
     outline: 0px solid transparent;
-    background-color: rgb(64, 255, 179);
+    background-color: rgb(255, 233, 64);
   }
 
   #inpt2 {
