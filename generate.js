@@ -3,7 +3,7 @@ function refreshPage() {
 }
 
 function choice(n) {
-    return Math.floor(Math.random() * n)
+    return Math.floor(Math.random() * n);
 }
 
 var fonts = [
@@ -39,10 +39,10 @@ var fonts = [
     { name: "SHKT25-Vinyl", url: "https://simonmeier4.github.io/SKT_woff/SHKT25-Vinyl.woff" },
     { name: "SHKT25-Würfel", url: "https://simonmeier4.github.io/SKT_woff/SHKT25-Würfel.woff" },
     { name: "SHKT25-Zaun", url: "https://simonmeier4.github.io/SKT_woff/SHKT25-Zaun.woff" }
-  ];
-  
-  // Funktion zum Hinzufügen der @font-face Regel für jede Schriftart
-  fonts.forEach(font => {
+];
+
+// Funktion zum Hinzufügen der @font-face Regel für jede Schriftart
+fonts.forEach(font => {
     const style = document.createElement('style');
     style.innerHTML = `
       @font-face {
@@ -51,13 +51,13 @@ var fonts = [
       }
     `;
     document.head.appendChild(style);
-  });
+});
 
 function change() {
     var output = "";
 
     var firstcharacter = Math.round(Math.random());
-    var fontCopy = font.slice();
+    var fontsCopy = fonts.slice();
 
     var input1 = document.getElementById('inpt');
     input1.textContent = input1.textContent.split('').map((v) =>
@@ -72,35 +72,37 @@ function change() {
     var inputText1 = document.getElementById("inpt").innerText;
     var inputText2 = document.getElementById("inpt2").innerText;
 
-    for (i = 0; i < inputText1.length; i++) {
-        if (i % 2 == firstcharacter && fontCopy.length > 0) {
-            auswahl = 1 + choice(fontCopy.length - 1)
-            var schnitt = fontCopy[auswahl]
-            fontCopy.splice(auswahl, 1);
+    for (var i = 0; i < inputText1.length; i++) {
+        var font;
+        if (i % 2 == firstcharacter && fontsCopy.length > 0) {
+            var auswahl = 1 + choice(fontsCopy.length - 1);
+            font = fontsCopy[auswahl];
+            fontsCopy.splice(auswahl, 1);
         } else {
-            var schnitt = font[0]
+            font = fonts[0];
         }
 
-        output += "<span style=\"" + schnitt + "\">" + inputText1[i] + "</span>";
+        output += `<span style="font-family: '${font.name}'">${inputText1[i]}</span>`;
     }
-    
+
     console.log(inputText1);
     console.log(output);
     document.getElementById("inpt").innerHTML = output;
 
     output = ""; // Reset output for the second input
-    fontCopy = font.slice(); // Reset fontCopy for the second input
+    fontsCopy = fonts.slice(); // Reset fontsCopy for the second input
 
-    for (i = 0; i < inputText2.length; i++) {
-        if (i % 3 == firstcharacter && fontCopy.length > 0) {
-            auswahl = 1 + choice(fontCopy.length - 1)
-            var schnitt = fontCopy[auswahl]
-            fontCopy.splice(auswahl, 1);
+    for (var i = 0; i < inputText2.length; i++) {
+        var font;
+        if (i % 3 == firstcharacter && fontsCopy.length > 0) {
+            var auswahl = 1 + choice(fontsCopy.length - 1);
+            font = fontsCopy[auswahl];
+            fontsCopy.splice(auswahl, 1);
         } else {
-            var schnitt = font[0]
+            font = fonts[0];
         }
 
-        output += "<span style=\"" + schnitt + "\">" + inputText2[i] + "</span>";
+        output += `<span style="font-family: '${font.name}'">${inputText2[i]}</span>`;
     }
 
     console.log(inputText2);
