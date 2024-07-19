@@ -197,7 +197,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-Uhr";
+    font-family: "SHKT25-Sound";
     color:#ffe000;
     font-size: 22vh;
     line-height: 0.80;
@@ -246,7 +246,7 @@ body {
     bottom: 0px;
     border: none;
     color: #625aa4;
-    font-family: "SHKT25-Uhr";
+    font-family: "SHKT25-Sound";
     font-variant-ligatures: discretionary-ligatures;
     text-align: center;
     text-decoration: none;
@@ -264,7 +264,7 @@ body {
     bottom: 0px;
     border: none;
     color: rgb(0, 0, 0);
-    font-family: "SHKT25-Uhr";
+    font-family: "SHKT25-Sound";
     font-variant-ligatures: discretionary-ligatures;
     text-align: right;
     text-decoration: none;
@@ -284,7 +284,7 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
-    font-family: "SHKT25-Uhr";
+    font-family: "SHKT25-Sound";
     font-size: 16px;
     margin-inline-end: -10px;
     border-radius: 10px;
@@ -307,7 +307,7 @@ canvas {
 #my-div {
   transform: translate(0%, 100%);
   position: absolute;
-  font-family: "SHKT25-Uhr";
+  font-family: "SHKT25-Sound";
   font-size: 32px;
   cursor: none;
 }

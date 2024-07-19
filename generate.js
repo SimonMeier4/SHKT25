@@ -57,7 +57,7 @@ function change() {
     var output = "";
 
     var firstcharacter = Math.round(Math.random());
-    var fontsCopy = fonts.slice();
+    var fontCopy = font.slice();
 
     var input1 = document.getElementById('inpt');
     input1.textContent = input1.textContent.split('').map((v) =>
@@ -73,12 +73,12 @@ function change() {
     var inputText2 = document.getElementById("inpt2").innerText;
 
     for (i = 0; i < inputText1.length; i++) {
-        if (i % 2 == firstcharacter && fontsCopy.length > 0) {
-            auswahl = 1 + choice(fontsCopy.length - 1)
-            var schnitt = fontsCopy[auswahl]
-            fontsCopy.splice(auswahl, 1);
+        if (i % 2 == firstcharacter && fontCopy.length > 0) {
+            auswahl = 1 + choice(fontCopy.length - 1)
+            var schnitt = fontCopy[auswahl]
+            fontCopy.splice(auswahl, 1);
         } else {
-            var schnitt = fonts[0]
+            var schnitt = font[0]
         }
 
         output += "<span style=\"" + schnitt + "\">" + inputText1[i] + "</span>";
@@ -89,15 +89,15 @@ function change() {
     document.getElementById("inpt").innerHTML = output;
 
     output = ""; // Reset output for the second input
-    fontsCopy = fonts.slice(); // Reset fontsCopy for the second input
+    fontCopy = font.slice(); // Reset fontCopy for the second input
 
     for (i = 0; i < inputText2.length; i++) {
-        if (i % 3 == firstcharacter && fontsCopy.length > 0) {
-            auswahl = 1 + choice(fontsCopy.length - 1)
-            var schnitt = fontsCopy[auswahl]
-            fontsCopy.splice(auswahl, 1);
+        if (i % 3 == firstcharacter && fontCopy.length > 0) {
+            auswahl = 1 + choice(fontCopy.length - 1)
+            var schnitt = fontCopy[auswahl]
+            fontCopy.splice(auswahl, 1);
         } else {
-            var schnitt = fonts[0]
+            var schnitt = font[0]
         }
 
         output += "<span style=\"" + schnitt + "\">" + inputText2[i] + "</span>";
