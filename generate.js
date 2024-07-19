@@ -45,198 +45,12 @@ var fonts = [
 fonts.forEach(font => {
     const style = document.createElement('style');
     style.innerHTML = `
-      
-@font-face {
-  font-family: "SHKT25-A";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Bauklotz";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Bauklotz.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Birne";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Birne.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Brick";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Brick.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Cloud";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Cloud.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Circle";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Circle.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Diamant-Fläche";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Diamant-Fläche.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Diamant";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Diamant.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Ente";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ente.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Explosion";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Explosion.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Flower";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Flower.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Feuerwerk";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Feuerwerk.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Frame";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Frame.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Ghost";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ghost.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Heart";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Heart.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Hand";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Hand.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Kontur-Einfach";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Einfach.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Kontur-Doppelt";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Doppelt.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Kontur-Fett-Gedreht";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Fett-Gedreht.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Kontur-Fett";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Fett.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Ohr";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ohr.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Sound";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Sound.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Spiral";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Spiral.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Splash";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Splash.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Spot";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Spot.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Square";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Square.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Streifen";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Streifen.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Sun";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Sun.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Uhr";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Uhr.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Vinyl";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Vinyl.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Würfel";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Würfel.woff') format('woff');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "SHKT25-Zaun";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Zaun.woff') format('woff');
-  font-style: normal;
-}
+    @font-face {
+        font-family: "${font.name}";
+        font-style: normal;
+        src: url('${font.url}') format('woff');
+        font-weight: normal;
+    }
     `;
     document.head.appendChild(style);
 });
@@ -270,7 +84,7 @@ function change() {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}'">${inputText1[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', sans-serif">${inputText1[i]}</span>`;
     }
 
     console.log(inputText1);
@@ -290,7 +104,7 @@ function change() {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}'">${inputText2[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', sans-serif">${inputText2[i]}</span>`;
     }
 
     console.log(inputText2);
