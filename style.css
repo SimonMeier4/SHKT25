@@ -3,6 +3,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "SHKT25-A";
+  src: url("/Users/simonmeier1/Documents/GitHub/SimonMeier4.github.io/SubSkipper/SKT_woff");
+  font-style: normal;
+}
+
 body {
   background-color: #ffffff00;
 }
