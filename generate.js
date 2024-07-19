@@ -47,6 +47,7 @@ fonts.forEach(font => {
     style.innerHTML = `
       @font-face {
         font-family: "${font.name}";
+        font-style: normal;
         src: url('${font.url}') format('woff');
       }
     `;
