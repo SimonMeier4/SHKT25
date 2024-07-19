@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "SHKT25-A";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
+  font-family: "SHKT25-Bauklotz";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Bauklotz.woff') format('woff');
 
 }
 
@@ -24,14 +24,14 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-A";
+    font-family: "SHKT25-Bauklotz";
     color:#625aa4;
     font-size: 22vh;
     line-height: 0.80;
     letter-spacing: -0.6vh;
     text-align: center;
     outline: 0px solid transparent;
-    background-color: rgb(255, 233, 64);
+    background-color: rgb(255, 163, 64);
   }
 
   #inpt2 {
@@ -42,7 +42,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-A";
+    font-family: "SHKT25-Bauklotz";
     color:#ffe000;
     font-size: 22vh;
     line-height: 0.80;
@@ -91,7 +91,7 @@ body {
     bottom: 0px;
     border: none;
     color: #625aa4;
-    font-family: "SHKT25-A";
+    font-family: "SHKT25-Bauklotz";
     font-variant-ligatures: discretionary-ligatures;
     text-align: center;
     text-decoration: none;
@@ -109,7 +109,7 @@ body {
     bottom: 0px;
     border: none;
     color: rgb(0, 0, 0);
-    font-family: "SHKT25-A";
+    font-family: "SHKT25-Bauklotz";
     font-variant-ligatures: discretionary-ligatures;
     text-align: right;
     text-decoration: none;
@@ -129,7 +129,7 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
-    font-family: "SHKT25-A";
+    font-family: "SHKT25-Bauklotz";
     font-size: 16px;
     margin-inline-end: -10px;
     border-radius: 10px;
@@ -152,7 +152,7 @@ canvas {
 #my-div {
   transform: translate(0%, 100%);
   position: absolute;
-  font-family: "SHKT25-A";
+  font-family: "SHKT25-Bauklotz";
   font-size: 32px;
   cursor: none;
 }
