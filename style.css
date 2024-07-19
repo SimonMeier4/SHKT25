@@ -186,7 +186,7 @@ body {
     letter-spacing: -0.6vh;
     text-align: center;
     outline: 0px solid transparent;
-    background-color: rgb(0, 62, 169);
+    background-color: rgba(255, 255, 255, 0);
   }
 
   #inpt2 {
@@ -197,7 +197,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-A";
     color:#ffe000;
     font-size: 22vh;
     line-height: 0.80;
@@ -246,7 +246,7 @@ body {
     bottom: 0px;
     border: none;
     color: #625aa4;
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-A";
     font-variant-ligatures: discretionary-ligatures;
     text-align: center;
     text-decoration: none;
@@ -264,7 +264,7 @@ body {
     bottom: 0px;
     border: none;
     color: rgb(0, 0, 0);
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-A";
     font-variant-ligatures: discretionary-ligatures;
     text-align: right;
     text-decoration: none;
@@ -284,7 +284,7 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-A";
     font-size: 16px;
     margin-inline-end: -10px;
     border-radius: 10px;
@@ -307,7 +307,7 @@ canvas {
 #my-div {
   transform: translate(0%, 100%);
   position: absolute;
-  font-family: "SHKT25-Bauklotz";
+  font-family: "SHKT25-A";
   font-size: 32px;
   cursor: none;
 }
