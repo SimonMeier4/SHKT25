@@ -4,10 +4,165 @@
 }
 
 @font-face {
+  font-family: "SHKT25-A";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
+}
+
+@font-face {
   font-family: "SHKT25-Bauklotz";
   src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Bauklotz.woff') format('woff');
-
 }
+
+@font-face {
+  font-family: "SHKT25-Birne";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Birne.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Brick";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Brick.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Cloud";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Cloud.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Circle";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Circle.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Diamant-Fläche";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Diamant-Fläche.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Diamant";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Diamant.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Ente";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ente.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Explosion";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Explosion.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Flower";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Flower.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Feuerwerk";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Feuerwerk.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Frame";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Frame.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Ghost";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ghost.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Heart";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Heart.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Hand";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Hand.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Kontur-Einfach";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Einfach.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Kontur-Doppelt";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Doppelt.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Kontur-Fett-Gedreht";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Fett-Gedreht.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Kontur-Fett";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Kontur-Fett.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Ohr";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Ohr.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Sound";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Sound.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Spiral";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Spiral.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Splash";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Splash.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Spot";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Spot.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Square";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Square.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Streifen";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Streifen.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Sun";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Sun.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Uhr";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Uhr.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Vinyl";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Vinyl.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Würfel";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Würfel.woff') format('woff');
+}
+
+@font-face {
+  font-family: "SHKT25-Zaun";
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-Zaun.woff') format('woff');
+}
+
 
 
 
@@ -24,7 +179,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-Uhr";
     color:#625aa4;
     font-size: 22vh;
     line-height: 0.80;
@@ -42,7 +197,7 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-Uhr";
     color:#ffe000;
     font-size: 22vh;
     line-height: 0.80;
@@ -91,7 +246,7 @@ body {
     bottom: 0px;
     border: none;
     color: #625aa4;
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-Uhr";
     font-variant-ligatures: discretionary-ligatures;
     text-align: center;
     text-decoration: none;
@@ -109,7 +264,7 @@ body {
     bottom: 0px;
     border: none;
     color: rgb(0, 0, 0);
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-Uhr";
     font-variant-ligatures: discretionary-ligatures;
     text-align: right;
     text-decoration: none;
@@ -129,7 +284,7 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
-    font-family: "SHKT25-Bauklotz";
+    font-family: "SHKT25-Uhr";
     font-size: 16px;
     margin-inline-end: -10px;
     border-radius: 10px;
@@ -152,7 +307,7 @@ canvas {
 #my-div {
   transform: translate(0%, 100%);
   position: absolute;
-  font-family: "SHKT25-Bauklotz";
+  font-family: "SHKT25-Uhr";
   font-size: 32px;
   cursor: none;
 }
