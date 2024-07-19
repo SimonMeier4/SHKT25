@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "SHKT25-A";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT-A.woff') format('woff');
+  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
   font-style: normal;
 }
 
@@ -29,7 +29,7 @@ body {
     letter-spacing: -0.6vh;
     text-align: center;
     outline: 0px solid transparent;
-    background-color: rgb(3, 255, 32);
+    background-color: rgb(255, 213, 3);
   }
 
   #inpt2 {
