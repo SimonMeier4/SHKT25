@@ -1,21 +1,12 @@
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "SHKT25-A";
-  src: url('https://simonmeier4.github.io/SKT_woff/SHKT25-A.woff') format('woff');
-  font-style: normal;
-}
-
-/* (Die anderen @font-face Regeln bleiben unverändert) */
-
-body {
-  background-color: #ffffff00;
-  margin: 0;
-  padding: 0;
+:root {
+  --font-size-large: 22vh;
+  --font-size-medium: 16vw;
+  --font-size-small: 16px;
+  --font-size-small-mobile: 4vw;
+  --font-size-x-small: 3vw;
+  --font-size-button: 4vw;
+  --font-size-infotext: 10vh;
+  --font-size-mydiv: 8vw;
 }
 
 #inpt, #inpt2 {
@@ -31,18 +22,16 @@ body {
   text-align: center;
   outline: 0px solid transparent;
   background-color: rgba(255, 255, 255, 0);
+  font-size: var(--font-size-large);
+  letter-spacing: -0.6vh;
 }
 
 #inpt {
   color: #625aa4;
-  font-size: 22vh;
-  letter-spacing: -0.6vh;
 }
 
 #inpt2 {
   color: #ffe000;
-  font-size: 22vh;
-  letter-spacing: -0.6vh;
   background-color: #00000000;
 }
 
@@ -60,7 +49,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 10vh;
+  font-size: var(--font-size-infotext);
   color: #625aa4;
   font-family: "ABCDiatype-Medium";
   line-height: 0.90;
@@ -79,7 +68,7 @@ body {
   font-variant-ligatures: discretionary-ligatures;
   text-align: center;
   text-decoration: none;
-  font-size: 4vw; /* Angepasst für mobile Geräte */
+  font-size: var(--font-size-small);
 }
 
 .url:hover {
@@ -97,7 +86,7 @@ body {
   font-variant-ligatures: discretionary-ligatures;
   text-align: right;
   text-decoration: none;
-  font-size: 3vw; /* Angepasst für mobile Geräte */
+  font-size: var(--font-size-x-small);
 }
 
 .link:hover {
@@ -105,16 +94,16 @@ body {
 }
 
 .button1 {
-  display: inline-block; /* Ändert inline zu inline-block */
-  margin: 4px; /* Verringert den Abstand zwischen Buttons */
-  padding: 10px 20px; /* Fügt Polsterung hinzu, um die Größe der Buttons zu kontrollieren */
+  display: inline-block;
+  margin: 4px;
+  padding: 10px 20px;
   background-color: #ffffff00;
   border: none;
   color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   font-family: "SHKT25-A";
-  font-size: 4vw; /* Angepasst für mobile Geräte */
+  font-size: var(--font-size-button);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -132,14 +121,14 @@ canvas {
   transform: translate(0%, 100%);
   position: absolute;
   font-family: "SHKT25-A";
-  font-size: 8vw; /* Angepasst für mobile Geräte */
+  font-size: var(--font-size-mydiv);
   cursor: none;
 }
 
 /* Media Queries für größere Bildschirme */
 @media (min-width: 768px) {
   #inpt, #inpt2 {
-    font-size: 22vh;
+    font-size: var(--font-size-large);
     letter-spacing: -0.6vh;
   }
 
@@ -153,7 +142,7 @@ canvas {
 
   .button1 {
     font-size: 16px;
-    padding: 10px 20px; /* Größere Polsterung für größere Bildschirme */
+    padding: 10px 20px;
   }
 
   #infotext {
@@ -168,29 +157,29 @@ canvas {
 /* Media Queries für kleinere Bildschirme */
 @media (max-width: 767px) {
   #inpt, #inpt2 {
-    font-size: 16vw;
+    font-size: var(--font-size-medium);
     letter-spacing: -0.4vw;
   }
 
   .url {
-    font-size: 4vw;
+    font-size: var(--font-size-small-mobile);
   }
 
   .link {
-    font-size: 3vw;
+    font-size: var(--font-size-x-small);
   }
 
   .button1 {
-    font-size: 4vw;
-    margin: 2px; /* Verringert den Abstand zwischen Buttons */
-    padding: 6px 12px; /* Reduziert die Polsterung für kleinere Buttons */
+    font-size: var(--font-size-button);
+    margin: 2px;
+    padding: 6px 12px;
   }
 
   #infotext {
-    font-size: 8vh;
+    font-size: var(--font-size-infotext);
   }
 
   #my-div {
-    font-size: 8vw;
+    font-size: var(--font-size-mydiv);
   }
 }
