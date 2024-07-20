@@ -1,4 +1,4 @@
-function getComputedFontSize(element, sizeType) {
+function getComputedFontSize(sizeType) {
   const rootStyles = getComputedStyle(document.documentElement);
   const sizeMap = {
     'large': '--font-size-large',
@@ -17,8 +17,8 @@ function getComputedFontSize(element, sizeType) {
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = getComputedFontSize(null, 'large');
-  input2.style.fontSize = getComputedFontSize(null, 'large');
+  input.style.fontSize = getComputedFontSize('large');
+  input2.style.fontSize = getComputedFontSize('large');
 }
 
 function getFontSize() {
@@ -29,26 +29,18 @@ function getFontSize() {
   if (zeichenzahl < 8) {
     input.style.fontSize = `${Math.max(actualSize - (zeichenzahl * 6), 16)}vh`; // Mindestgröße anpassen
   } else {
-    input.style.fontSize = getComputedFontSize(null, 'small');
+    input.style.fontSize = getComputedFontSize('small');
   }
 
   if (zeichenzahl2 < 8) {
     input2.style.fontSize = `${Math.max(actualSize - (zeichenzahl2 * 6), 16)}vh`; // Mindestgröße anpassen
   } else {
-    input2.style.fontSize = getComputedFontSize(null, 'small');
+    input2.style.fontSize = getComputedFontSize('small');
   }
 }
 
-// Rest des JavaScript-Codes bleibt unverändert.
-
-
 function clearBox(output) {
   location.reload();
-  // console.log(output);
-  // document.getElementById("inpt").innerHTML = "";
-  // document.getElementById("inpt2").innerHTML = "";
-  // input.style.fontSize = "64vh";
-  // input2.style.fontSize = "64vh";
 }
 
 var cb = document.getElementById("cb");
@@ -100,8 +92,8 @@ function changeStyle() {
   element2.style.letterSpacing = 0;
 }
 
-input = document.querySelector('#inpt');
-input2 = document.querySelector('#inpt2');
+const input = document.querySelector('#inpt');
+const input2 = document.querySelector('#inpt2');
 
 settings = {
   maxLen: 40,
@@ -160,7 +152,7 @@ input.addEventListener('keydown', function (event) {
 });
 
 input.addEventListener('input', function () {
-  document.getElementById('inpt2').innerHTML = this.innerHTML;
+  input2.innerHTML = this.innerHTML;
   getFontSize();
 });
 

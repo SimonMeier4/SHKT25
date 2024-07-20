@@ -1,9 +1,9 @@
 :root {
-  --font-size-large: 22vh;
-  --font-size-medium: 16vw;
-  --font-size-small: 16px;
-  --font-size-small-mobile: 4vw;
-  --font-size-x-small: 3vw;
+  --font-size-large: 64vh;
+  --font-size-medium: 22vh;
+  --font-size-small: 16vh;
+  --font-size-small-mobile: 16vw;
+  --font-size-x-small: 12vh;
   --font-size-button: 4vw;
   --font-size-infotext: 10vh;
   --font-size-mydiv: 8vw;
@@ -22,18 +22,28 @@
   text-align: center;
   outline: 0px solid transparent;
   background-color: rgba(255, 255, 255, 0);
-  font-size: var(--font-size-large);
-  letter-spacing: -0.6vh;
 }
 
 #inpt {
   color: #625aa4;
+  font-size: var(--font-size-medium);
+  letter-spacing: -0.6vh;
 }
 
 #inpt2 {
   color: #ffe000;
+  font-size: var(--font-size-medium);
+  letter-spacing: -0.6vh;
   background-color: #00000000;
 }
+
+@media (max-width: 767px) {
+  #inpt, #inpt2 {
+    font-size: var(--font-size-small-mobile);
+    letter-spacing: -0.4vw;
+  }
+}
+
 
 #info {
   position: fixed;
