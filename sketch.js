@@ -25,43 +25,6 @@ function getFontSize() {
   console.log(`FontSize inpt2: ${input2.style.fontSize}`);
 }
 
-input.addEventListener('input', function () {
-  document.getElementById('inpt2').innerHTML = this.innerHTML;
-  getFontSize();
-});
-
-// Optional: Bei Fenstergrößeänderung Schriftgröße neu berechnen
-window.addEventListener('resize', function() {
-  getFontSize();
-});
-
-function clearFirst() {
-  document.getElementById("inpt").innerHTML = "";
-  document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
-  input2.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
-}
-
-function getFontSize() {
-  let zeichenzahl = document.getElementById('inpt').innerHTML.length;
-  let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
-  let viewportWidth = window.innerWidth;
-
-  // Setze eine Basisgröße in vw
-  let baseSize = 10; // Basisgröße in vw
-  
-  // Berechne die Schriftgröße basierend auf der Anzahl der Zeichen
-  let fontSizeInput = `${Math.max(baseSize - (zeichenzahl * 0.5), 4)}vw`; // Mindestgröße anpassen
-  let fontSizeInput2 = `${Math.max(baseSize - (zeichenzahl2 * 0.5), 4)}vw`; // Mindestgröße anpassen
-
-  // Setze die Schriftgröße der Elemente
-  input.style.fontSize = fontSizeInput;
-  input2.style.fontSize = fontSizeInput2;
-
-  console.log(`FontSize inpt: ${input.style.fontSize}`);
-  console.log(`FontSize inpt2: ${input2.style.fontSize}`);
-}
-
 function clearBox(output) {
   location.reload();
 }
