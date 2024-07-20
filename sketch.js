@@ -18,10 +18,10 @@ function getFontSize() {
       input.style.fontSize = "16vh";
   }
 
-  if (zeichenzahl < 12) {
-    input.style.fontSize = actualSize - (zeichenzahl * 8) + "vh";
+  if (zeichenzahl2 < 12) {
+    input2.style.fontSize = actualSize - (zeichenzahl * 8) + "vh";
 } else if (zeichenzahl >11) {
-    input.style.fontSize = "16vh";
+    input2.style.fontSize = "16vh";
 }
 
   console.log(word);
