@@ -1,8 +1,8 @@
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = "4vw"; // Ändere diese Größe nach Bedarf
-  input2.style.fontSize = "4vw"; // Ändere diese Größe nach Bedarf
+  input.style.fontSize = "10vh"; // Ändere diese Größe nach Bedarf
+  input2.style.fontSize = "10vh"; // Ändere diese Größe nach Bedarf
 }
 
 function getFontSize() {
@@ -10,12 +10,12 @@ function getFontSize() {
   let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
   let viewportWidth = window.innerWidth;
 
-  // Setze eine Basisgröße in vw
-  let baseSize = 4; // Basisgröße in vw
+  // Setze eine Basisgröße in vh
+  let baseSize = 10; // Basisgröße in vh
   
   // Berechne die Schriftgröße basierend auf der Anzahl der Zeichen
-  let fontSizeInput = `${Math.max(baseSize - (zeichenzahl * 0.5), 4)}vw`; // Mindestgröße anpassen
-  let fontSizeInput2 = `${Math.max(baseSize - (zeichenzahl2 * 0.5), 4)}vw`; // Mindestgröße anpassen
+  let fontSizeInput = `${Math.max(baseSize - (zeichenzahl * 0.5), 4)}vh`; // Mindestgröße anpassen
+  let fontSizeInput2 = `${Math.max(baseSize - (zeichenzahl2 * 0.5), 4)}vh`; // Mindestgröße anpassen
 
   // Setze die Schriftgröße der Elemente
   input.style.fontSize = fontSizeInput;
@@ -72,9 +72,9 @@ function off() {
 function changeStyle() {
   var element = document.getElementById("inpt");
   var element2 = document.getElementById("inpt2");
-  element.style.fontSize = "5vw";
+  element.style.fontSize = "5vh";
   element.style.letterSpacing = 0;
-  element2.style.fontSize = "5vw";
+  element2.style.fontSize = "5vh";
   element2.style.letterSpacing = 0;
 }
 
