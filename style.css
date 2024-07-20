@@ -3,12 +3,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #inpt, #inpt2 {
     font-size: var(--font-size-small-mobile);
     letter-spacing: -0.4vw;
   }
-}
+} */
 
 @font-face {
   font-family: "SHKT25-A";
