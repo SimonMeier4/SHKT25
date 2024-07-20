@@ -1,9 +1,7 @@
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
-
 
 @font-face {
   font-family: "SHKT25-A";
@@ -197,181 +195,151 @@
   font-style: normal;
 }
 
+
+
+
 body {
   background-color: #ffffff00;
-  margin: 0;
-  padding: 0;
 }
 
-#inpt, #inpt2 {
-  mix-blend-mode: multiply;
-  width: 90%;
-  height: auto;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "SHKT25-A";
-  line-height: 0.80;
-  text-align: center;
-  outline: 0px solid transparent;
-  background-color: rgba(255, 255, 255, 0);
-}
+  #inpt {
+    mix-blend-mode: multiply;
+    width: 90%; 
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "SHKT25-A";
+    color:#625aa4;
+    font-size: 22vh;
+    line-height: 0.80;
+    letter-spacing: -0.6vh;
+    text-align: center;
+    outline: 0px solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+  }
 
-#inpt {
-  color: #625aa4;
-  font-size: 22vh;
-  letter-spacing: -0.6vh;
-}
+  #inpt2 {
+    width: 90%; 
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "SHKT25-A";
+    color:#ffe000;
+    font-size: 22vh;
+    line-height: 0.80;
+    letter-spacing: -0.6vh;
+    text-align: center;
+    outline: 0px solid transparent;
+    background-color: #00000000;
+  }
 
-#inpt2 {
-  color: #ffe000;
-  font-size: 22vh;
-  letter-spacing: -0.6vh;
-  background-color: #00000000;
-}
 
-#info {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #ffdd00;
-}
 
-#infotext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 10vh;
-  color: #625aa4;
-  font-family: "ABCDiatype-Medium";
-  line-height: 0.90;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
+  #info {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffdd00;
 
-.url {
-  position: fixed;
-  margin: 8px;
-  width: calc(100% - 16px);
-  bottom: 0;
-  border: none;
-  color: #625aa4;
-  font-family: "SHKT25-A";
-  font-variant-ligatures: discretionary-ligatures;
-  text-align: center;
-  text-decoration: none;
-  font-size: 4vw; /* Angepasst für mobile Geräte */
-}
+  }
+  
+  #infotext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color:#625aa4;
+    font-family: "ABCDiatype-Medium";
+    font-size: 10vh;
+    line-height: 0.90;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
 
-.url:hover {
-  color: rgb(0, 0, 0);
-}
+  
+  .url {
+    position: fixed;
+    margin: 8px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    border: none;
+    color: #625aa4;
+    font-family: "SHKT25-A";
+    font-variant-ligatures: discretionary-ligatures;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
 
-.link {
-  position: fixed;
-  margin: 8px;
-  right: 0;
-  bottom: 0;
-  border: none;
-  color: rgb(0, 0, 0);
-  font-family: "SHKT25-A";
-  font-variant-ligatures: discretionary-ligatures;
-  text-align: right;
-  text-decoration: none;
-  font-size: 3vw; /* Angepasst für mobile Geräte */
-}
+  .url:hover{
+    color: rgb(0, 0, 0);
+  }
 
-.link:hover {
-  color: #1e00ff;
-}
+  .link {
+    position: fixed;
+    margin: 8px; 
+    right: 0;
+    bottom: 0px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "SHKT25-A";
+    font-variant-ligatures: discretionary-ligatures;
+    text-align: right;
+    text-decoration: none;
+    font-size: 8px;
+  }
 
-.button1 {
-  display: inline;
-  margin: 8px;
-  background-color: #ffffff00;
-  border: none;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  text-decoration: none;
-  font-family: "SHKT25-A";
-  font-size: 4vw; /* Angepasst für mobile Geräte */
-  border-radius: 10px;
-  cursor: pointer;
-}
+  .link:hover{
+    color: #1e00ff;
+  }
 
-.button1:hover {
-  color: #625aa4;
-}
+  .button1 {
+    display:inline;
+    position:flex; 
+    margin: 8px;
+    background-color: #ffffff00;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: "SHKT25-A";
+    font-size: 16px;
+    margin-inline-end: -10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    color: #625aa4;
+  }
+
+
 
 canvas {
   display: block;
   background-color: #625aa4;
+
 }
+
 
 #my-div {
   transform: translate(0%, 100%);
   position: absolute;
   font-family: "SHKT25-A";
-  font-size: 8vw; /* Angepasst für mobile Geräte */
+  font-size: 32px;
   cursor: none;
-}
-
-/* Media Queries für größere Bildschirme */
-@media (min-width: 768px) {
-  #inpt, #inpt2 {
-    font-size: 22vh;
-    letter-spacing: -0.6vh;
-  }
-
-  .url {
-    font-size: 16px;
-  }
-
-  .link {
-    font-size: 8px;
-  }
-
-  .button1 {
-    font-size: 16px;
-  }
-
-  #infotext {
-    font-size: 50px;
-  }
-
-  #my-div {
-    font-size: 32px;
-  }
-}
-
-/* Media Queries für kleinere Bildschirme */
-@media (max-width: 767px) {
-  #inpt, #inpt2 {
-    font-size: 16vw;
-    letter-spacing: -0.4vw;
-  }
-
-  .url {
-    font-size: 4vw;
-  }
-
-  .link {
-    font-size: 3vw;
-  }
-
-  .button1 {
-    font-size: 4vw;
-  }
-
-  #infotext {
-    font-size: 8vh;
-  }
-
-  #my-div {
-    font-size: 8vw;
-  }
 }

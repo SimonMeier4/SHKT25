@@ -41,18 +41,17 @@ var fonts = [
     { name: "SHKT25-Zaun", url: "https://simonmeier4.github.io/SKT_woff/SHKT25-Zaun.woff" }
 ];
 
-// Funktion zum Hinzufügen der @font-face Regel für jede Schriftart
 fonts.forEach(font => {
     const style = document.createElement('style');
     style.innerHTML = `
     @font-face {
         font-family: "${font.name}";
-        font-style: normal;
         src: url('${font.url}') format('woff');
+        font-style: normal;
         font-weight: normal;
     }
     `;
-    document.head.appendChild(style);
+    document.getElementById('font-styles').appendChild(style);
 });
 
 function getRandomFallbackFont() {
@@ -80,40 +79,28 @@ function change() {
     var inputText1 = document.getElementById("inpt").innerText;
     var inputText2 = document.getElementById("inpt2").innerText;
 
-    for (var i = 0; i < inputText1.length; i++) {
-        var font;
-        if (i % 2 == firstcharacter && fontsCopy.length > 0) {
-            var auswahl = choice(fontsCopy.length);
-            font = fontsCopy[auswahl];
-            fontsCopy.splice(auswahl, 1);
-        } else {
-            font = fonts[0];
-        }
+    function generateTextWithFonts(inputText) {
+        var output = "";
+        for (var i = 0; i < inputText.length; i++) {
+            var font;
+            if (i % 2 == firstcharacter && fontsCopy.length > 0) {
+                var auswahl = choice(fontsCopy.length);
+                font = fontsCopy[auswahl];
+                fontsCopy.splice(auswahl, 1);
+            } else {
+                font = fonts[0];
+            }
 
-        output += `<span style="font-family: '${font.name}', '${getRandomFallbackFont()}'">${inputText1[i]}</span>`;
+            var fallbackFont = getRandomFallbackFont();
+
+            output += `<span style="font-family: '${font.name}', '${fallbackFont}'">${inputText[i]}</span>`;
+        }
+        return output;
     }
 
-    console.log(inputText1);
-    console.log(output);
-    document.getElementById("inpt").innerHTML = output;
-
-    output = ""; // Reset output for the second input
-    fontsCopy = fonts.slice(); // Reset fontsCopy for the second input
-
-    for (var i = 0; i < inputText2.length; i++) {
-        var font;
-        if (i % 3 == firstcharacter && fontsCopy.length > 0) {
-            var auswahl = choice(fontsCopy.length);
-            font = fontsCopy[auswahl];
-            fontsCopy.splice(auswahl, 1);
-        } else {
-            font = fonts[0];
-        }
-
-        output += `<span style="font-family: '${font.name}', '${getRandomFallbackFont()}'">${inputText2[i]}</span>`;
-    }
-
-    console.log(inputText2);
-    console.log(output);
-    document.getElementById("inpt2").innerHTML = output;
+    document.getElementById("inpt").innerHTML = generateTextWithFonts(inputText1);
+    document.getElementById("inpt2").innerHTML = generateTextWithFonts(inputText2);
 }
+
+// Beispielaufruf der Funktion
+change();
