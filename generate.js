@@ -41,24 +41,19 @@ var fonts = [
     { name: "SHKT25-Zaun", url: "https://simonmeier4.github.io/SKT_woff/SHKT25-Zaun.woff" }
 ];
 
+// Funktion zum Hinzufügen der @font-face Regel für jede Schriftart
 fonts.forEach(font => {
     const style = document.createElement('style');
     style.innerHTML = `
     @font-face {
         font-family: "${font.name}";
-        src: url('${font.url}') format('woff');
         font-style: normal;
+        src: url('${font.url}') format('woff');
         font-weight: normal;
     }
     `;
-    document.getElementById('font-styles').appendChild(style);
+    document.head.appendChild(style);
 });
-
-function getRandomFallbackFont() {
-    // Wählt zufällig eine Schriftart aus der Liste als Fallback
-    var fallbackFont = fonts[choice(fonts.length)];
-    return fallbackFont.name;
-}
 
 function change() {
     var output = "";
@@ -79,28 +74,40 @@ function change() {
     var inputText1 = document.getElementById("inpt").innerText;
     var inputText2 = document.getElementById("inpt2").innerText;
 
-    function generateTextWithFonts(inputText) {
-        var output = "";
-        for (var i = 0; i < inputText.length; i++) {
-            var font;
-            if (i % 2 == firstcharacter && fontsCopy.length > 0) {
-                var auswahl = choice(fontsCopy.length);
-                font = fontsCopy[auswahl];
-                fontsCopy.splice(auswahl, 1);
-            } else {
-                font = fonts[0];
-            }
-
-            var fallbackFont = getRandomFallbackFont();
-
-            output += `<span style="font-family: '${font.name}', '${fallbackFont}'">${inputText[i]}</span>`;
+    for (var i = 0; i < inputText1.length; i++) {
+        var font;
+        if (i % 2 == firstcharacter && fontsCopy.length > 0) {
+            var auswahl = choice(fontsCopy.length);
+            font = fontsCopy[auswahl];
+            fontsCopy.splice(auswahl, 1);
+        } else {
+            font = fonts[0];
         }
-        return output;
+
+        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText1[i]}</span>`;
     }
 
-    document.getElementById("inpt").innerHTML = generateTextWithFonts(inputText1);
-    document.getElementById("inpt2").innerHTML = generateTextWithFonts(inputText2);
-}
+    console.log(inputText1);
+    console.log(output);
+    document.getElementById("inpt").innerHTML = output;
 
-// Beispielaufruf der Funktion
-change();
+    output = ""; // Reset output for the second input
+    fontsCopy = fonts.slice(); // Reset fontsCopy for the second input
+
+    for (var i = 0; i < inputText2.length; i++) {
+        var font;
+        if (i % 3 == firstcharacter && fontsCopy.length > 0) {
+            var auswahl = choice(fontsCopy.length);
+            font = fontsCopy[auswahl];
+            fontsCopy.splice(auswahl, 1);
+        } else {
+            font = fonts[0];
+        }
+
+        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText2[i]}</span>`;
+    }
+
+    console.log(inputText2);
+    console.log(output);
+    document.getElementById("inpt2").innerHTML = output;
+}
