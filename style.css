@@ -197,12 +197,6 @@
 }
 
 
-
-
-body {
-  background-color: #ffffff00;
-}
-
 :root {
   --font-size-large: 64vh;
   --font-size-medium: 22vh;
@@ -214,34 +208,6 @@ body {
   --font-size-mydiv: 8vw;
 }
 
-#inpt, #inpt2 {
-  mix-blend-mode: multiply;
-  width: 90%;
-  height: auto;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "SHKT25-A";
-  line-height: 0.80;
-  text-align: center;
-  outline: 0px solid transparent;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#inpt {
-  color: #625aa4;
-  font-size: var(--font-size-medium);
-  letter-spacing: -0.6vh;
-}
-
-#inpt2 {
-  color: #ffe000;
-  font-size: var(--font-size-medium);
-  letter-spacing: -0.6vh;
-  background-color: #00000000;
-}
-
 @media (max-width: 767px) {
   #inpt, #inpt2 {
     font-size: var(--font-size-small-mobile);
@@ -249,6 +215,47 @@ body {
   }
 }
 
+
+body {
+  background-color: #ffffff00;
+}
+
+  #inpt {
+    mix-blend-mode: multiply;
+    width: 90%; 
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "SHKT25-A";
+    color:#625aa4;
+    font-size: 22vh;
+    line-height: 0.80;
+    letter-spacing: -0.6vh;
+    text-align: center;
+    outline: 0px solid transparent;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #inpt2 {
+    width: 90%; 
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "SHKT25-A";
+    color:#ffe000;
+    font-size: 22vh;
+    line-height: 0.80;
+    letter-spacing: -0.6vh;
+    text-align: center;
+    outline: 0px solid transparent;
+    background-color: #00000000;
+  }
 
 
 
