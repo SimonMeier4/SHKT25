@@ -77,14 +77,14 @@ function change() {
     for (var i = 0; i < inputText1.length; i++) {
         var font;
         if (i % 2 == firstcharacter && fontsCopy.length > 0) {
-            var auswahl = 1 + choice(fontsCopy.length - 1);
+            var auswahl = choice(fontsCopy.length);
             font = fontsCopy[auswahl];
             fontsCopy.splice(auswahl, 1);
         } else {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}', sans-serif">${inputText1[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText1[i]}</span>`;
     }
 
     console.log(inputText1);
@@ -97,14 +97,14 @@ function change() {
     for (var i = 0; i < inputText2.length; i++) {
         var font;
         if (i % 3 == firstcharacter && fontsCopy.length > 0) {
-            var auswahl = 1 + choice(fontsCopy.length - 1);
+            var auswahl = choice(fontsCopy.length);
             font = fontsCopy[auswahl];
             fontsCopy.splice(auswahl, 1);
         } else {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}', sans-serif">${inputText2[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText2[i]}</span>`;
     }
 
     console.log(inputText2);
