@@ -12,17 +12,17 @@ function getFontSize() {
   let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
   let actualSize = 70;
 
-  if (zeichenzahl < 12) {
-      input.style.fontSize = actualSize - (zeichenzahl * 8) + "vh";
-  } else if (zeichenzahl >11) {
-      input.style.fontSize = "16vh";
+  if (zeichenzahl < 8) {
+      input.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
+  } else if (zeichenzahl > 7) {
+      input.style.fontSize = "22vh";
   }
 
-  if (zeichenzahl2 < 12) {
-    input2.style.fontSize = actualSize - (zeichenzahl * 8) + "vh";
-} else if (zeichenzahl >11) {
-    input2.style.fontSize = "16vh";
-}
+  if (zeichenzahl2 < 8) {
+      input2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
+  } else if (zeichenzahl2 > 7) {
+      input2.style.fontSize = "22vh";
+  }
 
   console.log(word);
   console.log(word2);
