@@ -41,37 +41,37 @@ function clearBox(output) {
   // input2.style.fontSize = "64vh";
 }
 
-var cb = document.getElementById("cb");
-cb.addEventListener("click", function() {
-  if (cb.innerHTML === "Orange/Blau") { 
-      cb.innerHTML = "Violett/Gelb";
-      document.getElementById("inpt").style.color = "#ec6608";
-      document.getElementById("inpt2").style.color = "#00a2e1";
-      document.getElementById("bgc").style.display = 'none';
-      document.body.style.backgroundColor = "#00000000";
-  } else {
-      cb.innerHTML = "Orange/Blau";
-      document.getElementById("inpt").style.color = "#625aa4";
-      document.getElementById("inpt2").style.color = "#ffe000";
-      document.getElementById("bgc").style.display = 'inline';
-      document.body.style.backgroundColor = "#00000000";
-  }
-});
+// var cb = document.getElementById("cb");
+// cb.addEventListener("click", function() {
+//   if (cb.innerHTML === "Orange/Blau") { 
+//       cb.innerHTML = "Violett/Gelb";
+//       document.getElementById("inpt").style.color = "#ec6608";
+//       document.getElementById("inpt2").style.color = "#00a2e1";
+//       document.getElementById("bgc").style.display = 'none';
+//       document.body.style.backgroundColor = "#00000000";
+//   } else {
+//       cb.innerHTML = "Orange/Blau";
+//       document.getElementById("inpt").style.color = "#625aa4";
+//       document.getElementById("inpt2").style.color = "#ffe000";
+//       document.getElementById("bgc").style.display = 'inline';
+//       document.body.style.backgroundColor = "#00000000";
+//   }
+// });
 
-var bgc = document.getElementById("bgc");
-bgc.addEventListener("click", function() {
-  if (bgc.innerHTML === "Gelb") { 
-      bgc.innerHTML = "Weiss";
-      document.getElementById("inpt").style.color = "#625aa4";
-      document.getElementById("inpt2").style.color = "#ffffff";
-      document.body.style.backgroundColor = "#ffe000";
-  } else {
-      bgc.innerHTML = "Gelb";
-      document.getElementById("inpt").style.color = "#625aa4";
-      document.getElementById("inpt2").style.color = "#ffe000";
-      document.body.style.backgroundColor = "#00000000";
-  }
-});
+// var bgc = document.getElementById("bgc");
+// bgc.addEventListener("click", function() {
+//   if (bgc.innerHTML === "Gelb") { 
+//       bgc.innerHTML = "Weiss";
+//       document.getElementById("inpt").style.color = "#625aa4";
+//       document.getElementById("inpt2").style.color = "#ffffff";
+//       document.body.style.backgroundColor = "#ffe000";
+//   } else {
+//       bgc.innerHTML = "Gelb";
+//       document.getElementById("inpt").style.color = "#625aa4";
+//       document.getElementById("inpt2").style.color = "#ffe000";
+//       document.body.style.backgroundColor = "#00000000";
+//   }
+// });
 
 function on() {
   document.getElementById("info").style.display = "block";
