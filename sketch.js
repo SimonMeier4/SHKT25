@@ -1,44 +1,69 @@
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = "64vh";
-  input2.style.fontSize = "64vh";
+  input.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
+  input2.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
 }
 
 function getFontSize() {
-  let word = document.getElementById('inpt').innerText;
   let zeichenzahl = document.getElementById('inpt').innerHTML.length;
-  let word2 = document.getElementById('inpt2').innerText;
   let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
-  let actualSize = 70;
+  let viewportWidth = window.innerWidth;
 
-  if (zeichenzahl < 8) {
-      input.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
-  } else if (zeichenzahl > 7) {
-      input.style.fontSize = "22vh";
-  }
+  // Setze eine Basisgröße in vw
+  let baseSize = 10; // Basisgröße in vw
+  
+  // Berechne die Schriftgröße basierend auf der Anzahl der Zeichen
+  let fontSizeInput = `${Math.max(baseSize - (zeichenzahl * 0.5), 4)}vw`; // Mindestgröße anpassen
+  let fontSizeInput2 = `${Math.max(baseSize - (zeichenzahl2 * 0.5), 4)}vw`; // Mindestgröße anpassen
 
-  if (zeichenzahl2 < 8) {
-      input2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
-  } else if (zeichenzahl2 > 7) {
-      input2.style.fontSize = "22vh";
-  }
+  // Setze die Schriftgröße der Elemente
+  input.style.fontSize = fontSizeInput;
+  input2.style.fontSize = fontSizeInput2;
 
-  console.log(word);
-  console.log(word2);
-  console.log(input.style.fontSize);
-  console.log(input2.style.fontSize);
-  console.log(zeichenzahl);
-  console.log(zeichenzahl2);
+  console.log(`FontSize inpt: ${input.style.fontSize}`);
+  console.log(`FontSize inpt2: ${input2.style.fontSize}`);
+}
+
+input.addEventListener('input', function () {
+  document.getElementById('inpt2').innerHTML = this.innerHTML;
+  getFontSize();
+});
+
+// Optional: Bei Fenstergrößeänderung Schriftgröße neu berechnen
+window.addEventListener('resize', function() {
+  getFontSize();
+});
+
+function clearFirst() {
+  document.getElementById("inpt").innerHTML = "";
+  document.getElementById("inpt2").innerHTML = "";
+  input.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
+  input2.style.fontSize = "10vw"; // Ändere diese Größe nach Bedarf
+}
+
+function getFontSize() {
+  let zeichenzahl = document.getElementById('inpt').innerHTML.length;
+  let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
+  let viewportWidth = window.innerWidth;
+
+  // Setze eine Basisgröße in vw
+  let baseSize = 10; // Basisgröße in vw
+  
+  // Berechne die Schriftgröße basierend auf der Anzahl der Zeichen
+  let fontSizeInput = `${Math.max(baseSize - (zeichenzahl * 0.5), 4)}vw`; // Mindestgröße anpassen
+  let fontSizeInput2 = `${Math.max(baseSize - (zeichenzahl2 * 0.5), 4)}vw`; // Mindestgröße anpassen
+
+  // Setze die Schriftgröße der Elemente
+  input.style.fontSize = fontSizeInput;
+  input2.style.fontSize = fontSizeInput2;
+
+  console.log(`FontSize inpt: ${input.style.fontSize}`);
+  console.log(`FontSize inpt2: ${input2.style.fontSize}`);
 }
 
 function clearBox(output) {
   location.reload();
-  // console.log(output);
-  // document.getElementById("inpt").innerHTML = "";
-  // document.getElementById("inpt2").innerHTML = "";
-  // input.style.fontSize = "64vh";
-  // input2.style.fontSize = "64vh";
 }
 
 var cb = document.getElementById("cb");
@@ -90,8 +115,8 @@ function changeStyle() {
   element2.style.letterSpacing = 0;
 }
 
-input = document.querySelector('#inpt');
-input2 = document.querySelector('#inpt2');
+const input = document.querySelector('#inpt');
+const input2 = document.querySelector('#inpt2');
 
 settings = {
   maxLen: 40,
@@ -188,4 +213,9 @@ document.addEventListener("mousemove", (e) => {
 
 document.addEventListener("touchmove", (e) => {
   move(e);
+});
+
+// Bei Größenänderung des Fensters die Schriftgröße neu berechnen
+window.addEventListener('resize', function() {
+  getFontSize();
 });

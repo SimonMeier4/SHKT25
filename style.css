@@ -197,24 +197,6 @@
 }
 
 
-:root {
-  --font-size-large: 64vh;
-  --font-size-medium: 22vh;
-  --font-size-small: 16vh;
-  --font-size-small-mobile: 16vw;
-  --font-size-x-small: 12vh;
-  --font-size-button: 4vw;
-  --font-size-infotext: 10vh;
-  --font-size-mydiv: 8vw;
-}
-
-@media (max-width: 767px) {
-  #inpt, #inpt2 {
-    font-size: var(--font-size-small-mobile);
-    letter-spacing: -0.4vw;
-  }
-}
-
 
 body {
   background-color: #ffffff00;
