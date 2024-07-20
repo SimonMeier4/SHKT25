@@ -1,27 +1,34 @@
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = "64vh";
-  input2.style.fontSize = "64vh";
+  input.style.fontSize = "8vw";  // Angepasst für mobile Geräte
+  input2.style.fontSize = "8vw"; // Angepasst für mobile Geräte
 }
 
 function getFontSize() {
-  let word = document.getElementById('inpt').innerText;
-  let zeichenzahl = document.getElementById('inpt').innerHTML.length;
-  let word2 = document.getElementById('inpt2').innerText;
-  let zeichenzahl2 = document.getElementById('inpt2').innerHTML.length;
-  let actualSize = 70;
-
+  let input = document.getElementById('inpt');
+  let input2 = document.getElementById('inpt2');
+  let word = input.innerText;
+  let zeichenzahl = word.length; // Verwenden Sie innerText für Textlänge
+  let word2 = input2.innerText;
+  let zeichenzahl2 = word2.length;
+  
+  let minSize = 5; // Minimale Schriftgröße
+  let maxSize = 12; // Maximale Schriftgröße
+  
+  // Schriftgröße relativ zur Bildschirmbreite setzen (8% der Viewport-Breite)
+  let actualSize = Math.min(window.innerWidth / 10, maxSize);
+  
   if (zeichenzahl < 8) {
-      input.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
-  } else if (zeichenzahl > 7) {
-      input.style.fontSize = "22vh";
+    input.style.fontSize = Math.max(actualSize - (zeichenzahl * 0.5), minSize) + "vw";
+  } else {
+    input.style.fontSize = minSize + "vw";
   }
 
   if (zeichenzahl2 < 8) {
-      input2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
-  } else if (zeichenzahl2 > 7) {
-      input2.style.fontSize = "22vh";
+    input2.style.fontSize = Math.max(actualSize - (zeichenzahl2 * 0.5), minSize) + "vw";
+  } else {
+    input2.style.fontSize = minSize + "vw";
   }
 
   console.log(word);
@@ -37,8 +44,8 @@ function clearBox(output) {
   // console.log(output);
   // document.getElementById("inpt").innerHTML = "";
   // document.getElementById("inpt2").innerHTML = "";
-  // input.style.fontSize = "64vh";
-  // input2.style.fontSize = "64vh";
+  // input.style.fontSize = "8vw"; // Angepasst für mobile Geräte
+  // input2.style.fontSize = "8vw"; // Angepasst für mobile Geräte
 }
 
 var cb = document.getElementById("cb");
@@ -84,9 +91,9 @@ function off() {
 function changeStyle() {
   var element = document.getElementById("inpt");
   var element2 = document.getElementById("inpt2");
-  element.style.fontSize = "5vw";
+  element.style.fontSize = "5vw"; // Angepasst für mobile Geräte
   element.style.letterSpacing = 0;
-  element2.style.fontSize = "5vw";
+  element2.style.fontSize = "5vw"; // Angepasst für mobile Geräte
   element2.style.letterSpacing = 0;
 }
 
