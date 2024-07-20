@@ -55,6 +55,12 @@ fonts.forEach(font => {
     document.head.appendChild(style);
 });
 
+function getRandomFallbackFont() {
+    // Wählt zufällig eine Schriftart aus der Liste als Fallback
+    var fallbackFont = fonts[choice(fonts.length)];
+    return fallbackFont.name;
+}
+
 function change() {
     var output = "";
 
@@ -84,7 +90,7 @@ function change() {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText1[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', '${getRandomFallbackFont()}'">${inputText1[i]}</span>`;
     }
 
     console.log(inputText1);
@@ -104,7 +110,7 @@ function change() {
             font = fonts[0];
         }
 
-        output += `<span style="font-family: '${font.name}', 'SHKT25-A'">${inputText2[i]}</span>`;
+        output += `<span style="font-family: '${font.name}', '${getRandomFallbackFont()}'">${inputText2[i]}</span>`;
     }
 
     console.log(inputText2);
