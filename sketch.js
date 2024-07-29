@@ -1,8 +1,8 @@
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  input.style.fontSize = "64vh";
-  input2.style.fontSize = "64vh";
+  inpt.style.fontSize = "64vh";
+  inpt2.style.fontSize = "64vh";
 }
 
 function getFontSize() {
@@ -13,15 +13,15 @@ function getFontSize() {
   let actualSize = 70;
 
   if (zeichenzahl < 8) {
-      input.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
+      inpt.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
   } else if (zeichenzahl > 7) {
-      input.style.fontSize = "22vh";
+      inpt.style.fontSize = "22vh";
   }
 
   if (zeichenzahl2 < 8) {
-      input2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
+      inpt2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
   } else if (zeichenzahl2 > 7) {
-      input2.style.fontSize = "22vh";
+      inpt2.style.fontSize = "22vh";
   }
 
   console.log(word);
@@ -34,11 +34,6 @@ function getFontSize() {
 
 function clearBox(output) {
   location.reload();
-  // console.log(output);
-  // document.getElementById("inpt").innerHTML = "";
-  // document.getElementById("inpt2").innerHTML = "";
-  // input.style.fontSize = "64vh";
-  // input2.style.fontSize = "64vh";
 }
 
 var cb = document.getElementById("cb");
@@ -54,20 +49,6 @@ cb.addEventListener("click", function() {
   }
 });
 
-// var bgc = document.getElementById("bgc");
-// bgc.addEventListener("click", function() {
-//   if (bgc.innerHTML === "Gelb") { 
-//       bgc.innerHTML = "Weiss";
-//       document.getElementById("inpt").style.color = "#625aa4";
-//       document.getElementById("inpt2").style.color = "#ffffff";
-//       document.body.style.backgroundColor = "#ffe000";
-//   } else {
-//       bgc.innerHTML = "Gelb";
-//       document.getElementById("inpt").style.color = "#625aa4";
-//       document.getElementById("inpt2").style.color = "#ffe000";
-//       document.body.style.backgroundColor = "#00000000";
-//   }
-// });
 
 function on() {
   document.getElementById("info").style.display = "block";
