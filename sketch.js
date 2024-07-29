@@ -1,8 +1,8 @@
 function clearFirst() {
   document.getElementById("inpt").innerHTML = "";
   document.getElementById("inpt2").innerHTML = "";
-  inpt.style.fontSize = "64vh";
-  inpt2.style.fontSize = "64vh";
+  input.style.fontSize = "64vh";
+  input2.style.fontSize = "64vh";
 }
 
 function getFontSize() {
@@ -13,15 +13,15 @@ function getFontSize() {
   let actualSize = 70;
 
   if (zeichenzahl < 8) {
-      inpt.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
+      input.style.fontSize = actualSize - (zeichenzahl * 6) + "vh";
   } else if (zeichenzahl > 7) {
-      inpt.style.fontSize = "22vh";
+      input.style.fontSize = "22vh";
   }
 
   if (zeichenzahl2 < 8) {
-      inpt2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
+      input2.style.fontSize = actualSize - (zeichenzahl2 * 6) + "vh";
   } else if (zeichenzahl2 > 7) {
-      inpt2.style.fontSize = "22vh";
+      input2.style.fontSize = "22vh";
   }
 
   console.log(word);
