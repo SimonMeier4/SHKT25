@@ -43,12 +43,12 @@ function clearBox(output) {
 
 var cb = document.getElementById("cb");
 cb.addEventListener("click", function() {
-  if (cb.innerHTML === "Background OFF") { 
-      cb.innerHTML = "Background ON";
+  if (cb.innerHTML === "Hintergrund OFF") { 
+      cb.innerHTML = "Hintergrund ON";
       document.getElementById("inpt2").style.color = "#00000000";
       document.body.style.backgroundColor = "#ffe000";
   } else {
-      cb.innerHTML = "Background OFF";
+      cb.innerHTML = "Hintergrund OFF";
       document.getElementById("inpt2").style.color = "#ffe000";
       document.body.style.backgroundColor = "#00000000";
   }
