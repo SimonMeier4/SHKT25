@@ -43,14 +43,14 @@ function clearBox(output) {
 
 var cb = document.getElementById("cb");
 cb.addEventListener("click", function() {
-  if (cb.innerHTML === "Hintergrund OFF") { 
-      cb.innerHTML = "Hintergrund ON";
-      document.getElementById("inpt2").style.color = "#00000000";
+  if (cb.innerHTML === "Background OFF") { 
+      cb.innerHTML = "Background ON";
+      document.getElementById("inpt2").style.color = "#FFFFFF";
       document.body.style.backgroundColor = "#ffe000";
   } else {
-      cb.innerHTML = "Hintergrund OFF";
+      cb.innerHTML = "Background OFF";
       document.getElementById("inpt2").style.color = "#ffe000";
-      document.body.style.backgroundColor = "#00000000";
+      document.body.style.backgroundColor = "#FFFFFF";
   }
 });
 
